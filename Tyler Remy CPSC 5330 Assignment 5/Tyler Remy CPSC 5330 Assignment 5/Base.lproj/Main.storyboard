@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tyler_Remy_CPSC_5330_Assignment_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8xF-QN-wae">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-6i-iNK" userLabel="Main View">
+                                <rect key="frame" x="30" y="30" width="333" height="792"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="AKW-YF-Zol" userLabel="Header">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="264"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mole" translatesAutoresizingMaskIntoConstraints="NO" id="cBj-mL-jz7">
+                                                <rect key="frame" x="0.0" y="0.0" width="152" height="264"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the Mole!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qy-ro-6dd">
+                                                <rect key="frame" x="181" y="88.666666666666686" width="152" height="87"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A mole has infiltrated your organization! Select a deparment to begin investigating for the mole!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uk9-m9-kl5">
+                                        <rect key="frame" x="0.0" y="264" width="333" height="264"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="IRT-KF-ieH" userLabel="Options">
+                                        <rect key="frame" x="0.0" y="528" width="333" height="264"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LID-H6-hTD">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="131"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="optionSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4eD-Cm-5B9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zK-GT-TDC">
+                                                <rect key="frame" x="0.0" y="133" width="333" height="131"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="optionSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AnY-wg-gMB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uk9-m9-kl5" firstAttribute="height" secondItem="AKW-YF-Zol" secondAttribute="height" id="aLa-wx-Qk9"/>
+                                    <constraint firstItem="IRT-KF-ieH" firstAttribute="height" secondItem="AKW-YF-Zol" secondAttribute="height" id="eae-2m-W8K"/>
+                                    <constraint firstItem="uk9-m9-kl5" firstAttribute="width" secondItem="AKW-YF-Zol" secondAttribute="width" id="m3z-vd-wyb"/>
+                                    <constraint firstItem="IRT-KF-ieH" firstAttribute="width" secondItem="AKW-YF-Zol" secondAttribute="width" id="pOx-nt-qTu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Auu-6i-iNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="6Yq-R3-G1w"/>
+                            <constraint firstAttribute="trailing" secondItem="Auu-6i-iNK" secondAttribute="trailing" constant="30" id="ecX-oq-Xdk"/>
+                            <constraint firstItem="8xF-QN-wae" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="foy-ta-Uz3"/>
+                            <constraint firstItem="8xF-QN-wae" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gcO-ZB-8ke"/>
+                            <constraint firstItem="Auu-6i-iNK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="hTa-mf-q7z"/>
+                            <constraint firstAttribute="bottom" secondItem="Auu-6i-iNK" secondAttribute="bottom" constant="30" id="jp1-eL-xn4"/>
+                            <constraint firstItem="8xF-QN-wae" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="waS-4I-nb2"/>
+                            <constraint firstAttribute="bottom" secondItem="8xF-QN-wae" secondAttribute="bottom" id="ysG-US-so4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decisionLabel" destination="uk9-m9-kl5" id="llR-ov-JtX"/>
+                        <outlet property="gameLabel" destination="9Qy-ro-6dd" id="MJ7-Q5-YjW"/>
+                        <outlet property="optionOne" destination="LID-H6-hTD" id="yNc-Wv-DMW"/>
+                        <outlet property="optionTwo" destination="8zK-GT-TDC" id="Lh8-Pj-FMn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19.083969465648853" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="5827" height="3814"/>
+        <image name="mole" width="1929.6666259765625" height="1359.6666259765625"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
